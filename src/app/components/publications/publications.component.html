@@ -1,0 +1,19 @@
+    <router-outlet>
+        <!-- <div *ngIf="newPublicationFlag"> -->
+        
+        <!-- </div> -->
+    </router-outlet>
+
+<main class="main" #main>
+    
+    <section class="section">
+        <article *ngFor="let publication of publications" class="publication">
+            <app-publication-card [publication]="publication"></app-publication-card>
+        </article>
+    </section>
+</main>
+<button class="add-button" (click)='switchPublicationFlag()'><i class="fas fa-plus"></i></button>
+
+<!-- <div *ngIf="newPublicationFlag">
+    <app-new-publication  [flagIn]="newPublicationFlag" (flagOut)="newPublicationFlag = $event"></app-new-publication>
+</div> -->

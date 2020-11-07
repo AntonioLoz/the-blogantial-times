@@ -1,0 +1,33 @@
+<div class="opaque">
+
+</div>
+
+<main class="main">
+    
+    <form class="form-container" [formGroup]="publicationForm" (ngSubmit)="onSubmit()">
+        <button class="button-close" type="button" (click)='onClose()'><i class="fas fa-times"></i></button>
+        <div class="input-container">
+            <label for="author">Author</label>
+            <input type="text" id="author" formControlName="author">
+        </div>
+        <div class="input-container">
+            <label for="title">Title</label>
+            <input type="text" id="title" formControlName="title">
+        </div>
+        <div class="input-container">
+            <label for="img-url">Image url</label>
+            <input type="text" id="img-url" formControlName="imgUrl">
+        </div>
+        <div class="input-container">
+            <label for="tag">Tag</label>
+            <input type="text" id="tag" formControlName="tag">
+        </div>
+        <div class="input-container">
+            <label for="description">Description</label>
+            <textarea class="description" type="text" id="description" formControlName="description"></textarea>
+        </div>
+        <div class="button-container">
+            <button type="submit" class="button-submit">Do it!</button>
+        </div>
+    </form>
+</main>

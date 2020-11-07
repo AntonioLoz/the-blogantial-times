@@ -1,0 +1,63 @@
+.opaque {
+    min-height: 100vh;
+    width: 100vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.9) ;
+    z-index: 2;
+    position: fixed;
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.form-container {
+    width: 35vw;
+    padding: 2rem;
+    background-color: #B2B2B2;
+    border-radius: 40px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.button-close {
+    position: relative;
+    left: 95%;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #383838;
+    color:white;
+    border: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.button-submit {
+    border-radius: 50px;
+    width: 5rem;
+    height: 1.5rem;
+    background-color: #383838;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.description {
+    height: 5rem;
+}

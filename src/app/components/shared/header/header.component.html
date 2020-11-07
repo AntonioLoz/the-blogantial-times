@@ -1,0 +1,13 @@
+<header class="header">
+    <div class="title-container"><h1 class="title">The Blogantial Times</h1></div>
+    <span class="buttons-container">
+        <a *ngIf="auth;else notLoged" (click)="logout()">
+            <i class="fas fa-user button"><i class="text">logout</i></i> 
+        </a>
+        <ng-template #notLoged>
+            <a>
+                <i class="fas fa-user-slash button" (click)='login()'><i class="text">   login</i></i> 
+            </a>
+        </ng-template>
+    </span>
+</header>

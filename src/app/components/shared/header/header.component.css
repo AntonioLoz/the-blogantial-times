@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    height: 13vh;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    background-color: #383838;
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.title-container{
+    grid-column-start:2;
+    grid-column-end:3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 9vw;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.text {
+    cursor: pointer;
+}

@@ -1,0 +1,10 @@
+<div class="card-container">
+    <div class="text-container">
+        <h3 class="title" *ngIf="publication.title.length <= 60; else subs">{{ publication.title }}</h3>
+        <ng-template #subs><h3 class="title" >{{ publication.title.substring(0, 58).concat('...') }}</h3></ng-template>
+        <p>{{ publication.descrption.substring(0, 78).concat('...') }}</p>
+        <button class="button-tag">{{ publication.category }}</button>
+        <p class="created">Created: {{ publication.published | date: 'dd/MM/yyyy' }} </p>
+    </div>
+    <div class="image-container"><img [src]="publication.imageUrl"  alt=""></div>
+</div>

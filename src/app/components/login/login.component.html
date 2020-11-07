@@ -1,0 +1,22 @@
+<main class="main">
+    <div class="title-container">
+        <h2>Sign in to The Blogantial Times </h2>
+    </div>
+    <form class="form-container" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="input-container">
+            <label for="user-name">User</label>
+            <input type="text" class="user-name" formControlName="userName">
+        </div>
+        <div class="input-container">   
+            <label for="password">Password</label>
+            <input type="password" name="" class="password" formControlName="password">
+        </div>
+        <div class="input-container" class="button-container">
+            <button class="signin-button"> Sign in</button>
+        </div>
+    </form>
+
+    <div class="new-account">
+        <p>New to The Blogantial Times? <a>Create an account.</a></p>
+    </div>
+</main>
